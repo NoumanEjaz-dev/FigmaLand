@@ -14,7 +14,7 @@ import Partners from "../../components/Partners/Partners";
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <div className={styles.background}>
           <Navbar />
           <Intro />

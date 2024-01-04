@@ -8,7 +8,6 @@ import Facebook from "../../src/img/facebook.png";
 import Twitter from "../../src/img/Twitter.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styles from "../../src/styles/Home.module.css";
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);

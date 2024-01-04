@@ -54,13 +54,8 @@ const Partners = () => {
             </div>
             {/* section-section partners */}
             <div class="flex flex-wrap -m-4 justify-center">
-              {/* lg:w-1/4 md:w-1/2 */}
-              {/* {`${styles.container} block sm:hidden text-gray-600 body-font pt-10`} */}
               <div class="">
-                <div
-                // class="h-full flex flex-col items-center text-center"
-                // className={`${styles.dropbox} h-full flex flex-col items-center text-center`}
-                >
+                <div>
                   <Image src={dropboxImage} alt="dropbox" />
                 </div>
               </div>
@@ -80,6 +75,9 @@ const Partners = () => {
                 </div>
                 {/*  */}
               </div>
+            </div>
+            <div className={`${styles.Tryforfree} text-center mt-20 `}>
+              <Buttons title="Try For Free" />
             </div>
           </div>
         </section>

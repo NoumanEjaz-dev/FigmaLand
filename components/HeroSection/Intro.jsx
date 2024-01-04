@@ -5,6 +5,7 @@ import styles from "../../src/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Togglebtn from "../../src/img/Togglebtn.png";
+import Togglebutton from "../../components/SwitchButton/SwitchButton";
 
 const Intro = () => {
   return (
@@ -40,6 +41,9 @@ const Intro = () => {
                   priority
                 />
                 <p className=" ml-3">Show Both</p>
+              </div>
+              <div className={`${styles.SwitchButton} pt-2`}>
+                <Togglebutton />
               </div>
             </div>
           </div>
