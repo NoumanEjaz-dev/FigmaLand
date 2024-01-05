@@ -7,7 +7,8 @@ import Link from "next/link";
 import Togglebtn from "../../src/img/Togglebtn.png";
 import Togglebutton from "../../components/SwitchButton/SwitchButton";
 
-const Intro = () => {
+const Intro = ({ Change }) => {
+  console.log("hello", Change);
   return (
     <>
       <section className={styles.Intro}>
@@ -43,7 +44,7 @@ const Intro = () => {
                 <p className=" ml-3">Show Both</p>
               </div>
               <div className={`${styles.SwitchButton} pt-2`}>
-                <Togglebutton />
+                <Togglebutton Change={Change} />
               </div>
             </div>
           </div>

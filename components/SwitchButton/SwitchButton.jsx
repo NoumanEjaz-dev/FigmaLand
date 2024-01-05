@@ -1,10 +1,13 @@
 import { useState } from "react";
 
-const Toggle = () => {
+const Toggle = ({ Change }) => {
+  console.log(Change, "no change");
   const [isToggled, setIsToggled] = useState(false);
+  const [Left, setLeft] = useState(!Change);
 
   const toggleButton = () => {
     setIsToggled(!isToggled);
+    setLeft(Left);
   };
 
   return (
