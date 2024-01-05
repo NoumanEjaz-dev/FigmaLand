@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-const Toggle = ({ Change }) => {
+const Toggle = ({ Change, onToggle }) => {
   console.log(Change, "no change");
   const [isToggled, setIsToggled] = useState(false);
-  const [Left, setLeft] = useState(!Change);
 
   const toggleButton = () => {
     setIsToggled(!isToggled);
-    setLeft(Left);
+    onToggle();
   };
 
   return (
@@ -20,11 +19,10 @@ const Toggle = ({ Change }) => {
       >
         <div
           className={`${
-            isToggled ? "translate-x-8" : "translate-x-0"
+            isToggled ? "translate-x-0" : "translate-x-0"
           } w-5 h-5 bg-white rounded-full shadow-md transform transition-transform`}
         />
       </button>
-      {/* <p>{isToggled ? "Toggled On" : "Toggled Off"}</p> */}
     </div>
   );
 };

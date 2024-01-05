@@ -15,7 +15,7 @@ import Toggle from "../../components/SwitchButton/SwitchButton";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [isChange, setIsChange] = useState(false);
+  const [isChange, setIsChange] = useState(true);
 
   return (
     <>
@@ -23,14 +23,16 @@ export default function Home() {
         {/* <div dir="rtl"> */}
         <div
           dir={`${isChange ? "ltr" : "rtl"}`}
-          onClick={() => setIsChange(!isChange)}
-        ></div>
-        <div className={styles.background}>
-          <Navbar />
-          <Intro Change={isChange} />
-          <Feature />
-          <Partners />
+          // onClick={() => setIsChange(!isChange)}
+        >
+          <div className={styles.background}>
+            <Navbar />
+            <Intro Change={isChange} SetChange={setIsChange} />
+            <Feature />
+            <Partners />
+          </div>
         </div>
+
         {/* </div> */}
       </main>
     </>
