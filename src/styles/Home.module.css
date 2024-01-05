@@ -97,7 +97,14 @@
   .FeatureService {
     width: 100%;
   }
+  .contact {
+    margin-right: 128px;
+  }
+  /* .mediaIcons {
+    margin-right: 119px;
+  } */
 }
+
 .FeatureService {
   width: 80%;
   font-family: Actor, sans-serif;

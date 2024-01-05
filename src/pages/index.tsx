@@ -11,6 +11,8 @@ import { title } from "process";
 import Feature from "../../components/Features/Feature";
 import Partners from "../../components/Partners/Partners";
 import Toggle from "../../components/SwitchButton/SwitchButton";
+import footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +22,13 @@ export default function Home() {
   return (
     <>
       <main className={`${styles.main}`}>
-        {/* <div dir="rtl"> */}
-        <div
-          dir={`${isChange ? "ltr" : "rtl"}`}
-          // onClick={() => setIsChange(!isChange)}
-        >
+        <div dir={`${isChange ? "ltr" : "rtl"}`}>
           <div className={styles.background}>
             <Navbar />
             <Intro Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />
+            <Footer />
           </div>
         </div>
 

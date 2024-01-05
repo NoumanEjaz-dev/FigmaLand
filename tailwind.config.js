@@ -11,10 +11,9 @@ module.exports = {
 
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "hero-pattern": "url('../../img/bg.')",
-      //   "footer-texture": "url('/img/footer-texture.png')",
-      // },
+      colors: {
+        blueColor: "#243c5a",
+      },
     },
   },
   plugins: [require("tailwindcss-rtl")],
