@@ -125,13 +125,14 @@
     display: none;
   }
   .FeaturesParaSm {
-    width: 50%;
+    width: 55%;
     font-family: Actor, sans-serif;
     font-size: 19px;
     line-height: 29px;
+    color: #374754;
   }
   .FeatureHeading {
-    padding-top: 120px;
+    padding-top: 160px;
     font-family: Actor, sans-serif;
     font-size: 28px;
     font-style: normal;
@@ -150,6 +151,7 @@
   }
   .FeatureService {
     width: 100%;
+    padding: 15px;
   }
   .contact {
     margin-right: 128px;
@@ -160,7 +162,7 @@
 }
 
 .FeatureService {
-  width: 80%;
+  width: 100%;
   font-family: Actor, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -171,7 +173,7 @@
 }
 .FeatureDesign {
   font-family: Actor, sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -215,11 +217,12 @@
 
 .FeatureServicePara {
   font-family: Actor, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 100;
   line-height: 25px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
+  color: #374754;
 }
 .PartnersPara {
   font-family: Actor, sans-serif;

@@ -46,8 +46,10 @@ const Feature = () => {
         </section>
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-20 mx-auto">
-            <div class="flex flex-wrap md:w-7/12 lg:w-7/12 w-9/12 m-auto">
-              <div class="lg:w-1/3 lg:mb-0 mb-6 p-6">
+            <div
+              className={`${styles.services}  flex flex-wrap md:w-7/12 lg:w-8/12 xl:w-7/12 w-10/12 m-auto`}
+            >
+              <div class="lg:w-1/3 lg:mb-0 mb-6 p-7">
                 <div class="h-full text-center">
                   <Image src={Icon3} alt="Icon3" />
 
@@ -65,7 +67,7 @@ const Feature = () => {
                   </p>
                 </div>
               </div>
-              <div class="lg:w-1/3 lg:mb-0 mb-6 p-6">
+              <div class="lg:w-1/3 lg:mb-0 mb-6 p-7">
                 <div class="h-full text-center">
                   <Image src={Icon2} alt="Icon2" />
                   <h1
