@@ -32,14 +32,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.navbar} fixed w-full shadow-x`}
+        className={`${styles.navbar} fixed w-full`}
         style={{
           backgroundColor: scrollPosition > 0 ? "#60a5fa" : "transparent",
           height: "120px",
         }}
       >
         <div
-          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 2xl:px-16 py-24`}
+          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 pt-16`}
         >
           <div className="flex">
             <div className={`${styles.logoSm} `}>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <ul className="hidden md:flex items-center">
               <Link href="/">
                 <li
-                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                  className={`${styles.list} nav-items ml-4 font-sans text-base hover:border-b`}
                 >
                   Home
                 </li>
@@ -125,7 +125,19 @@ const Navbar = () => {
             </Link>
           </div>
           <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
-            <AiOutlineMenu size={25} />
+            {/* <AiOutlineMenu size={25} /> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="32"
+              viewBox="0 0 40 32"
+              fill="none"
+            >
+              <path
+                d="M6.66663 8H33.3333V10.6667H6.66663V8ZM13.3333 14.6667H33.3333V17.3333H13.3333V14.6667ZM21.6666 21.3333H33.3333V24H21.6666V21.3333Z"
+                fill="white"
+              />
+            </svg>
           </div>
         </div>
         <div
@@ -133,7 +145,7 @@ const Navbar = () => {
           // fixed left-[-100%] top-0 p-10 ease-in duration-500
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-72  sm:hidden h-screen bg-blue-400 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-72  md:hidden h-screen bg-blue-400 p-10 ease-in duration-500"
               : "fixed -left-56 top-0 p-10 ease-out duration-500"
           }
         >

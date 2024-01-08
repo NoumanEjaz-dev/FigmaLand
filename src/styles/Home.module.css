@@ -37,7 +37,7 @@
   height: auto;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: 93vh;
+  min-height: 90vh;
   /* background-color: red; */
 }
 .logoSm {
@@ -54,7 +54,7 @@
 @media only screen and (max-width: 1024px) {
   .HeroHeading {
     font-size: 47px;
-    width: 74%;
+    width: 44%;
     line-height: normal;
     /* font-family: "Actor", sans-serif; */
   }
@@ -72,6 +72,9 @@
   .logoCenter {
     margin-left: 26px;
   }
+  .Heading {
+    padding-top: 150px;
+  }
 }
 
 @media only screen and (max-width: 690px) {
@@ -85,7 +88,7 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   .Intro {
     background-image: url("../img/bg.png");
     width: 100%;
@@ -93,11 +96,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    min-height: 85vh;
+    min-height: 100vh;
   }
   .NavbarContainer {
-    padding-top: 60px;
+    padding-top: 40px;
     justify-content: center;
+  }
+  .HeroHeading {
+    padding-top: 60px;
   }
 
   .logoSm {
@@ -113,7 +119,7 @@
     padding-top: 120px;
   }
   .buttonSection {
-    margin-top: 20px;
+    margin-top: 35px;
   }
   .FeaturesPara {
     display: none;

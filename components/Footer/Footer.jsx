@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <footer class="text-white body-font bg-gray-800">
         <div class="container lg:w-8/12 m-auto px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class=" w-96 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 ">
+          <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 ">
             <a class="flex title-font font-normal items-center md:justify-start justify-center text-white mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
