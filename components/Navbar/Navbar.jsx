@@ -8,6 +8,7 @@ import Facebook from "../../src/img/facebook.png";
 import Twitter from "../../src/img/Twitter.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styles from "../../src/styles/Home.module.css";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -31,55 +32,63 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.navbar} fixed w-full h-24 shadow-x`}
+        className={`${styles.navbar} fixed w-full shadow-x`}
         style={{
           backgroundColor: scrollPosition > 0 ? "#60a5fa" : "transparent",
+          height: "120px",
         }}
       >
-        <div className="flex justify-around items-center text-white w-full h-full px-6 2xl:px-16">
+        <div
+          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 2xl:px-16 py-24`}
+        >
           <div className="flex">
-            <div>
-              <Link href="/" className="">
-                <Image
-                  src={Logo}
-                  alt="logo-1"
-                  className="xl:invisible xl:flex cursor-pointer"
-                  priority
-                />
+            <div className={`${styles.logoSm} `}>
+              <Link href="/">
+                <Image src={Logo} alt="logo-1" priority />
               </Link>
             </div>
             <ul className="hidden md:flex items-center">
               <Link href="/">
-                <li className="nav-items ml-10 font-sans text-base hover:border-b ">
+                <li
+                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                >
                   Home
                 </li>
               </Link>
               <Link href="/">
-                <li className="nav-items ml-10 font-sans text-base  hover:border-b ">
+                <li
+                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                >
                   Product
                 </li>
               </Link>
               <Link href="/">
-                <li className="nav-items ml-10 font-sans text-base  hover:border-b ">
+                <li
+                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                >
                   Pricing
                 </li>
               </Link>
               <Link href="/">
-                <li className="nav-items ml-10 font-sans text-base  hover:border-b ">
+                <li
+                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                >
                   About{" "}
                 </li>
               </Link>
               <Link href="/">
-                <li className="ml-10 font-sans text-base  hover:border-b ">
+                <li
+                  className={`${styles.list} nav-items ml-8 font-sans text-base hover:border-b`}
+                >
                   Contact
                 </li>
               </Link>
-              <div className="ml-16">
+              <div className={`${styles.logoCenter}`}>
                 <Link href="/">
                   <Image
                     src={Logo}
                     alt="logo-end"
-                    className="sm:invisible xl:visible cursor-pointer ml-10"
+                    className="cursor-pointer ml-10"
                     priority
                   />
                 </Link>

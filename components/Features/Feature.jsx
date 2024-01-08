@@ -12,7 +12,7 @@ const Feature = () => {
     <>
       <div className="Features-Section pb-10">
         <h1
-          className={`${styles.FeatureHeading} text-center pt-20 text-5xl font-normal`}
+          className={`${styles.FeatureHeading} text-center pt-20 text-5xl font-normal gap-7`}
         >
           Features
         </h1>
