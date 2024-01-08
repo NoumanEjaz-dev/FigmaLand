@@ -39,7 +39,7 @@ const Navbar = () => {
         }}
       >
         <div
-          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 pt-16`}
+          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 pt-14`}
         >
           <div className="flex">
             <div className={`${styles.logoSm} `}>
