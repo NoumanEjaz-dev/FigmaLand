@@ -13,7 +13,7 @@ const Partners = () => {
     <>
       <div className="Partners">
         <h1
-          className={`${styles.PartnersHeading} text-center pt-20 text-4xl font-medium`}
+          className={`${styles.PartnersHeading} text-center pt-20 text-5xl font-normal`}
         >
           Partners
         </h1>
@@ -25,7 +25,7 @@ const Partners = () => {
         </p>{" "}
         <section
           // className={`${styles.PartnersSection}  text-gray-600 body-font`}
-          className={`${styles.PartnersSection} hidden xl:block md:hidden  text-gray-600 body-font`}
+          className={`${styles.PartnersSection}   text-gray-600 body-font`}
         >
           <div class="container  py-24 mx-auto text-center ">
             <div class="flex flex-wrap -m-4 justify-center">
@@ -77,7 +77,7 @@ const Partners = () => {
               </div>
             </div>
             <div className={`${styles.Tryforfree} text-center mt-20 `}>
-              <Buttons title="Try For Free" />
+              <Buttons title="Try For Free" color="#2091F9" />
             </div>
           </div>
         </section>
@@ -85,7 +85,7 @@ const Partners = () => {
 
       {/* this section should display at md and sm screen 3-partners */}
       <section
-        className={`${styles.Clients}  lg:hidden sm:block  lg:w-1/1 md:w-1/1  text-gray-600 body-font`}
+        className={`${styles.Clients} lg:w-1/1 md:w-1/1  text-gray-600 body-font`}
       >
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 justify-center">
@@ -121,7 +121,7 @@ const Partners = () => {
             </div>
           </div>
           <div className={`${styles.Tryforfree} text-center mt-20 `}>
-            <Buttons title="Try For Free" />
+            <Buttons title="Try For Free" color="2091F9" />
           </div>
         </div>
       </section>

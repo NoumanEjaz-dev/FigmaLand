@@ -37,8 +37,16 @@ const Intro = ({ Change, SetChange }) => {
               Most calendars are designed for teams.{" "}
             </p>
             <div className={`${styles.buttonSection} mt-10 lg:mt-20 pt-5`}>
-              <Buttons title="Show/Hide Features" className={styles.btn} />
-              <Buttons title="Show/Hide Partners" className={styles.btn} />
+              <Buttons
+                title="Show/Hide Features"
+                color="#2091F9"
+                className={styles.btn}
+              />
+              <Buttons
+                title="Show/Hide Partners"
+                color="#2091F9"
+                className={styles.btn}
+              />
               <div className=" mt-3 flex justify-center text-gray-50">
                 <Image
                   src={Togglebtn}
