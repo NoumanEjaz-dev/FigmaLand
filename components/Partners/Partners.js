@@ -77,7 +77,12 @@ const Partners = () => {
               </div>
             </div>
             <div className={`${styles.Tryforfree} text-center mt-20 `}>
-              <Buttons title="Try For Free" color="#2091F9" />
+              <Buttons
+                title="Try For Free"
+                color="#2091F9"
+                padding="50px"
+                paddingtopbottom="16px"
+              />
             </div>
           </div>
         </section>
@@ -121,7 +126,12 @@ const Partners = () => {
             </div>
           </div>
           <div className={`${styles.Tryforfree} text-center mt-20 `}>
-            <Buttons title="Try For Free" color="2091F9" />
+            <Buttons
+              title="Try For Free"
+              color="#2091F9"
+              padding="50px"
+              paddingtopbottom="16px"
+            />
           </div>
         </div>
       </section>

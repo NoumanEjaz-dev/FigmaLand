@@ -91,6 +91,9 @@
   .Heading {
     padding-top: 150px;
   }
+  .footerContainer {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 690px) {
@@ -251,3 +254,6 @@
 /* .Tryforfree {
   background-color: #2091f9;
 } */
+.footerSection {
+  background: var(--Dark-background, #252b42);
+}

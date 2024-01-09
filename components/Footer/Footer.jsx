@@ -7,7 +7,9 @@ import styles from "../../src/styles/Home.module.css";
 const Footer = () => {
   return (
     <>
-      <footer class="text-white body-font bg-gray-800">
+      <footer
+        className={`${styles.footerSection} text-white body-font bg-gray-800`}
+      >
         <div class="container lg:w-8/12 m-auto px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           {/* <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 ">
             <a class="flex title-font font-normal items-center md:justify-start justify-center text-white mb-4">
@@ -92,7 +94,9 @@ const Footer = () => {
               </svg>
             </a>
           </div> */}
-          <div class="flex-grow flex flex-wrap  -mb-10 md:text-left text-center order-first">
+          <div
+            className={`${styles.footerContainer} flex-grow flex -mb-10 md:text-left text-center order-first`}
+          >
             <div class="lg:w-1/4 xl:w-1/4 md:w-1/3 w-full px-4">
               <h2 class="title-font font-normal text-white tracking-widest mb-3 text-xl">
                 Pages
@@ -159,9 +163,11 @@ const Footer = () => {
                 </li>
               </nav>
             </div>
+            {/*  */}
             <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 ">
-              <a class="flex title-font font-normal items-center md:justify-start justify-center text-white mb-4">
+              <a class="flex title-font font-normal items-center justify-start lg:justify-center text-white mb-4">
                 <svg
+                  className="ml-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
                   height="47"
@@ -177,7 +183,7 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>
-                <span class="ml-3 text-base ">
+                <span class="ml-2 text-base ">
                   7480 Mockingbird Hill undefined{" "}
                 </span>
               </a>
@@ -197,7 +203,7 @@ const Footer = () => {
                   />
                 </svg>
 
-                <span class="ml-3 text-base">(239) 555-0108</span>
+                <span class="ml-3 text-base">(239) 555-0108 ssd</span>
               </a>
               <a
                 className={`${styles.mediaIcons} flex title-font font-normal items-center md:justify-start justify-center text-white mt-6`}
