@@ -23,6 +23,7 @@ export default function Home() {
             <Intro Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />
+            <SliderBox />
             <Footer />
           </div>
         </div>

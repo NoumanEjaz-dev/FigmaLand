@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-// import Logo from "../src/img/dark.png";
 import Logo from "../../src/img/dark.png";
 import Image from "next/image";
 import Lindedin from "../../src/img/linkedin.png";
@@ -39,7 +38,7 @@ const Navbar = () => {
         }}
       >
         <div
-          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 pt-14`}
+          className={`${styles.NavbarContainer} flex justify-evenly items-center text-white h-full px-6 pt-4 pb-4`}
         >
           <div className="flex">
             <div className={`${styles.logoSm} `}>
