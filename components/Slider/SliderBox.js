@@ -8,6 +8,7 @@ import rightArrowIcon from "../../public/image/arrowRight.png";
 import styles from "../../src/styles/Home.module.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import sliderStyle from "./sliderbox.module.css";
 
 // ... (Your other imports and components)
 
@@ -16,30 +17,18 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={styles.arrow}
+      className={className}
       style={{
         ...style,
-        fontSize: "50px",
         cursor: "pointer",
-        // maringTop: "100px",
-
-        // color: "black !important", // Set arrow color to black
-        // fontSize: "30px !important", // Set arrow font size to 30px
-        // textAlign: "end",
-        // marginTop: "285px",
-        // width: "80px",
-        // cursor: "pointer",
-        // direction: "rtl",
+        marginTop: "330px",
         position: "absolute",
+        marginRight: "90px",
       }}
       onClick={onClick}
     >
-      {/* <AiOutlineArrowLeft
-        color="gray"
-        className="arrowIcons"
-        style={{ marginTop: "13px" }}
-      /> */}
       <svg
+        className={`${sliderStyle.arrowIcon} `}
         xmlns="http://www.w3.org/2000/svg"
         width="60"
         height="61"
@@ -62,26 +51,19 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={styles.arrow}
+      className={className}
       style={{
         ...style,
-
-        float: "right",
-        fontSize: "50px",
-        width: "20px",
         cursor: "pointer",
-        // width: "70px",
-        position: "relative",
-        right: "50px",
-        top: "660px",
+        marginTop: "344px",
+        marginLeft: "50px",
       }}
       onClick={onClick}
     >
       {/* <AiOutlineArrowRight color="gray" className="arrowIcons" /> */}
       <svg
+        className={`${sliderStyle.arrowIcon} `}
         color="gray"
-        className="arrowIcons"
-        // style={{ marginTop: "13px" }}
         xmlns="http://www.w3.org/2000/svg"
         width="57"
         height="33"
@@ -108,7 +90,7 @@ const SliderBox = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     customPaging: function (i) {
-      return <div className={`${styles.customDot} `}></div>;
+      return <div className={`${sliderStyle.customDot} `}></div>;
     },
     responsive: [
       {
@@ -133,8 +115,10 @@ const SliderBox = () => {
   return (
     <>
       <div className="w-3/4 m-auto pb-36 ">
-        <h1 className={`${styles.SliderHeading} text-center`}>FEATURED VIDEOS</h1>
-        <div className="mt-20">
+        <h1 className={`${sliderStyle.SliderHeading} text-center`}>
+          FEATURED VIDEOS
+        </h1>
+        <div className={`${sliderStyle.SliderContainer} mt-20`}>
           <Slider {...settings}>
             {data.map((d) => (
               // eslint-disable-next-line react/jsx-key
@@ -150,15 +134,15 @@ const SliderBox = () => {
 
                 <div className="flex flex-col justify-center items-center gap-5 p-4">
                   <h2
-                    className={`${styles.TitleName} text-3xl font-bold text-center`}
+                    className={`${sliderStyle.TitleName} text-3xl font-bold text-center`}
                   >
                     {" "}
                     {d.name}
                   </h2>
-                  <p className={`${styles.InvitedText} text-center`}>
+                  <p className={`${sliderStyle.InvitedText} text-center`}>
                     {d.title}
                   </p>
-                  <p className={`${styles.sliderText} text-center m-auto`}>
+                  <p className={`${sliderStyle.sliderText} text-center m-auto`}>
                     {d.Text}
                   </p>
                 </div>

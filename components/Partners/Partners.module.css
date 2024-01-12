@@ -1,0 +1,48 @@
+.PartnersSection {
+  display: block;
+}
+.PartnersPara {
+  font-family: Actor, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+.Clients {
+  display: none;
+}
+
+@media only screen and (max-width: 1279px) {
+  .PartnersSection {
+    display: none;
+  }
+  .Clients {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heroPara {
+    display: none;
+  }
+  .heroParaSm {
+    width: 62%;
+  }
+  .Heading {
+    padding-top: 120px;
+  }
+  .buttonSection {
+    margin-top: 35px;
+  }
+  .PartnersHeading {
+    padding-top: 0px;
+    font-family: Actor, sans-serif;
+    font-size: 48x;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+  }
+}

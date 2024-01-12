@@ -7,25 +7,26 @@ import microsoftImage from "../../src/img/Partners/microsoft.png";
 import uberImage from "../../src/img/Partners/uber.png";
 import styles from "../../src/styles/Home.module.css";
 import Buttons from "../Buttons/Buttons";
+import PartnerStyles from "./Partners.module.css";
 
 const Partners = () => {
   return (
     <>
       <div className="Partners">
         <h1
-          className={`${styles.PartnersHeading} text-center pt-20 text-5xl font-normal`}
+          className={`${PartnerStyles.PartnersHeading} text-center pt-20 text-5xl font-normal`}
         >
           Partners
         </h1>
         <p
-          className={`${styles.PartnersPara} text-center pt-2 text-xl text-black-400 leading-10 xl:w-1/5 md:w-1/2 sm:w-1/2 m-auto`}
+          className={`${PartnerStyles.PartnersPara} text-center pt-2 text-xl text-black-400 leading-10 xl:w-1/5 md:w-1/2 sm:w-1/2 m-auto`}
         >
           Most calendars are designed for teams. Slate is designed for
           freelancers
         </p>{" "}
         <section
           // className={`${styles.PartnersSection}  text-gray-600 body-font`}
-          className={`${styles.PartnersSection}   text-gray-600 body-font`}
+          className={`${PartnerStyles.PartnersSection}   text-gray-600 body-font`}
         >
           <div class="container  py-24 mx-auto text-center ">
             <div class="flex flex-wrap -m-4 justify-center">
@@ -91,7 +92,7 @@ const Partners = () => {
 
       {/* this section should display at md and sm screen 3-partners */}
       <section
-        className={`${styles.Clients} lg:w-1/1 md:w-1/1  text-gray-600 body-font`}
+        className={`${PartnerStyles.Clients} lg:w-1/1 md:w-1/1  text-gray-600 body-font`}
       >
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 justify-center">

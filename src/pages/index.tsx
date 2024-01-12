@@ -16,14 +16,14 @@ export default function Home() {
 
   return (
     <>
-      <main className={`${styles.main}`}>
+      <main className={`${styles.main} `}>
         <div dir={`${isChange ? "ltr" : "rtl"}`}>
           <div className={styles.background}>
             <Navbar />
             <Intro Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />
-            <SliderBox />
+            <SliderBox Change={isChange} SetChange={setIsChange} />
             <Footer />
           </div>
         </div>

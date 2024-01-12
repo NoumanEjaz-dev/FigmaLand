@@ -1,0 +1,70 @@
+.SliderContainer :global(.slick-next::before) {
+  content: "";
+}
+
+.SliderContainer :global(.slick-prev::before) {
+  content: "";
+}
+
+:dir(ltr) .arrowIcon {
+  transform: rotate3d(0, 180, 1, 180deg);
+}
+
+:dir(rtl) .arrowIcon {
+  transform: rotate3d(0, 180, 1, 0deg);
+}
+
+@media only screen and (max-width: 425px) {
+  .arrowIcon {
+    display: none;
+  }
+}
+
+
+
+.customDot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #636363;
+  margin: 0 5px;
+  margin-top: 34px;
+}
+.sliderText {
+  width: 80%;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #888;
+}
+
+.InvitedText {
+  color: #454545;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.TitleName {
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.SliderHeading {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
