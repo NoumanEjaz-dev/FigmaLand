@@ -82,6 +82,7 @@ const Partners = () => {
                 color="#2091F9"
                 padding="50px"
                 paddingtopbottom="16px"
+                width="236px"
               />
             </div>
           </div>
@@ -131,6 +132,7 @@ const Partners = () => {
               color="#2091F9"
               padding="50px"
               paddingtopbottom="16px"
+              width="236px"
             />
           </div>
         </div>

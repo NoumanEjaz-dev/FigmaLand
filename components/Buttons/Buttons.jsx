@@ -1,12 +1,13 @@
 import React from "react";
 
-const Buttons = ({ title, color, padding, paddingtopbottom }) => {
+const Buttons = ({ title, color, padding, paddingtopbottom, width }) => {
   const buttonStyles = {
     backgroundColor: color,
     paddingLeft: padding,
     paddingRight: padding,
     paddingTop: paddingtopbottom,
     paddingBottom: paddingtopbottom,
+    width: width,
   };
   return (
     <>
