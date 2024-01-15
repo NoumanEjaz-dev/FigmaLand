@@ -28,12 +28,12 @@ export default function Home() {
             <Partners />
             <SliderBox />
             <Footer />
-            {/* <Subscribe /> */}
             <Infoblock />
+            <Subscribe />
           </div>
         </div>
 
-        {/* <SliderBox /> */}
+        {/* <TilesGroup /> */}
 
         {/* </div> */}
       </main>

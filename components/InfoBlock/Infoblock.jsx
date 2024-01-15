@@ -65,7 +65,7 @@ const Infoblock = () => {
                 {/* <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
                   Bitters hashtag waistcoat fashion axe chia unicorn
                 </h2> */}
-                <p className={`${InfoBlockStyles.InfoPara} leading-relaxed`}>
+                <p className={`${InfoBlockStyles.InfoPara}`}>
                   Globally, the AKDN’s activities in early childhood development
                   provide 750,000 children aged pre-natal-8 with quality early
                   learning opportunities, annually.
