@@ -1,0 +1,14 @@
+.InfoPara {
+  font-family: Gotham, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.6px;
+  color: var(--Gray-5, #323031);
+}
+
+.SeeMore {
+  color: var(--Blue, #084c61);
+  font-weight: 500;
+}

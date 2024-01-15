@@ -183,9 +183,7 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>
-                <span class="ml-2 text-base ">
-                  7480 Mockingbird Hill undefined{" "}
-                </span>
+                <p class="ml-2 text-base ">7480 Mockingbird Hill undefined </p>
               </a>
               <a
                 className={`${styles.contact} flex title-font font-normal items-center md:justify-start justify-center text-white`}
@@ -203,7 +201,7 @@ const Footer = () => {
                   />
                 </svg>
 
-                <span class="ml-3 text-base">(239) 555-0108 ssd</span>
+                <p class="ml-3 text-base">(239) 555-0108 ssd</p>
               </a>
               <a
                 className={`${styles.mediaIcons} flex title-font font-normal items-center md:justify-start justify-center text-white mt-6`}
