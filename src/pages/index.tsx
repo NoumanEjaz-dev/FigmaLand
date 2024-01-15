@@ -29,7 +29,7 @@ export default function Home() {
             <SliderBox />
             <Footer />
             <Infoblock />
-            <Subscribe />
+            {/* <Subscribe /> */}
           </div>
         </div>
 
