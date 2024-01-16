@@ -22,7 +22,7 @@ export default function Home() {
       <main className={`${styles.main} `}>
         <div dir={`${isChange ? "ltr" : "rtl"}`}>
           <div className={styles.background}>
-            <Navbar />
+            <Navbar Change={isChange} />
             <HeroSection Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />

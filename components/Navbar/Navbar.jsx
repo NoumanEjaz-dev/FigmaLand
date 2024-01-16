@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 // import styles from "../../src/styles/Home.module.css";
 import NavbarStyle from "./Navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ Change }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -162,14 +162,17 @@ const Navbar = () => {
             </svg>
           </div>
         </div>
+
         <div
-          // w-[65%]
-          // fixed left-[-100%] top-0 p-10 ease-in duration-500
-          className={
+          className={`${
             menuOpen
-              ? " absolute left-0 top-0 w-72  md:hidden h-screen bg-blue-400 p-10 ease-in duration-500"
-              : "fixed -left-56 top-0 p-10 ease-out duration-500"
-          }
+              ? ` absolute left-0 top-0 w-72 h-screen bg-blue-400 p-10 ease-in duration-500 md:hidden ${
+                  Change
+                    ? "  right-0 ease-out duration-500  bg-blue-400"
+                    : " left-36  ease-out duration-500  bg-blue-400"
+                }`
+              : "fixed top-0 -left-56 p-10 ease-out duration-500"
+          }`}
         >
           <div className="flex w-full items-center justify-end">
             <div onClick={handleNav} className="cursor-pointer">

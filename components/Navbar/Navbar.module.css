@@ -80,6 +80,13 @@
   .Heading {
     padding-top: 150px;
   }
+  :dir(ltr) .menuOpen {
+    float: right;
+  }
+
+  :dir(rtl) .rtl_btn {
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
