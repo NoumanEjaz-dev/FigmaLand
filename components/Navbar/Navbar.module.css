@@ -28,7 +28,7 @@
   display: none;
 }
 .NavbarContainer {
-  /* width: 1210px; */
+  width: 80%;
   height: 156px;
   margin: auto;
 }
@@ -60,6 +60,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  :dir(rtl) .NavbarContainer {
+    justify-content: space-between;
+  }
   .NavbarContainer {
     width: 100%;
     margin: auto;
@@ -131,10 +134,6 @@
 
 :dir(ltr) .NavbarContainer {
   justify-content: space-around;
-}
-
-:dir(rtl) .NavbarContainer {
-  justify-content: space-between;
 }
 
 :dir(ltr) .rtl_btn {
