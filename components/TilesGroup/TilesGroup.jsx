@@ -27,14 +27,14 @@ import TilesGroupStyle from "./TilesGroup.module.css";
 const TilesGroup = () => {
   return (
     <>
-      <div className="Partners pt-10">
+      <div className="Tiles pt-10">
         <section
           // className={`${styles.PartnersSection}  text-gray-600 body-font`}
-          className={`${TilesGroupStyle.TilesSection}   text-gray-600 body-font`}
+          className={`${TilesGroupStyle.TilesSection}   text-gray-600 body-font  `}
         >
-          <div class="container pt-16 mx-auto text-center w-4/5 ">
+          <div class="container pt-9 mx-auto text-center w-4/5 hidden md:hidden  lg:block shadow pb-16">
             <div
-              className={`${TilesGroupStyle.TilesPara} flex justify-between text-center pt-2 w-4/5 m-auto p-12 `}
+              className={`${TilesGroupStyle.TilesPara} flex justify-between text-center w-4/5 m-auto pt-8 pb-14 pr-5 pl-5 `}
             >
               <h1 className=" uppercase font-sans font-bold ">Our Agencies</h1>
               <p className=" capitalize font-sans font-semibold flex items-center ">
@@ -119,8 +119,12 @@ const TilesGroup = () => {
             </div>
           </div>
         </section>
-        <section className={`${TilesGroupStyle.smScreen}  `}>
-          <div className={`${TilesGroupStyle.container} w-1/4 bg-white p-7 `}>
+        <section
+          className={`${TilesGroupStyle.smScreen}  sm:block lg:hidden shadow p-5 w-4/5 m-auto`}
+        >
+          <div
+            className={`${TilesGroupStyle.container}  lg:w-1/4 bg-white p-7 `}
+          >
             <div
               className={`${TilesGroupStyle.HeadSection} flex justify-between `}
             >
@@ -147,41 +151,57 @@ const TilesGroup = () => {
             </div>
             <div className={`${TilesGroupStyle.TilesItems}  `}>
               <ul>
-                <li className=" no-underline flex text-center items-center bg-yellow-100">
-                  <Image src={Icon1} alt="Icon1" />
-                  <p>Aga khan Academies</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon1} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">Aga khan Academies</p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon2} alt="Icon1" />
-                  <p>Aga khan Agency For Habitat</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon2} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga khan Agency For Habitat
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon3} alt="Icon1" />
-                  <p>Aga Khan Agency for Microfinance</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon3} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Agency for Microfinance
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon4} alt="Icon1" />
-                  <p>Aga Khan Education Servicess</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon4} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Education Servicess
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon5} alt="Icon1" />
-                  <p>Aga Khan Foundation</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon5} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Foundation
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon6} alt="Icon1" />
-                  <p>Aga Khan Fund for Economic Development</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon6} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Fund for Economic Development
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon7} alt="Icon1" />
-                  <p>Aga Khan Health Services</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon7} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Health Services
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon8} alt="Icon1" />
-                  <p>Aga Khan Trust for Culture</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3 border-b-2">
+                  <Image src={Icon8} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan Trust for Culture
+                  </p>
                 </li>
-                <li className=" no-underline flex text-center items-center p-2">
-                  <Image src={Icon9} alt="Icon1" />
-                  <p>Aga Khan University</p>
+                <li className=" no-underline flex text-center items-center pl-0 p-4 pb-3  ">
+                  <Image src={Icon9} alt="Icon1" width="40px" />
+                  <p className="pl-3 text-sm font-medium">
+                    Aga Khan University
+                  </p>
                 </li>
               </ul>
             </div>

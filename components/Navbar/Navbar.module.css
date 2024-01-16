@@ -1,0 +1,146 @@
+.main {
+  min-height: 100vh;
+  /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+  /* clip-path: polygon(135% 0%, -35% 0%, 48% 168%); */
+}
+.background {
+  /* background-image: url("../img/bg.png"); */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  /* min-height: 100vh; */
+  /* clip-path: polygon(298% 0%, -169% 0%, 49% 108%); */
+  /* clip-path: polygon(128% 0%, -27% 0%, 49% 84%); */
+  /* background-image: url("../../src/img/bg.png"); */
+}
+
+.Intro {
+  background-image: url("../../src/img/bg.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 90vh;
+  /* background-color: red; */
+}
+.logoSm {
+  display: none;
+}
+.NavbarContainer {
+  /* width: 1210px; */
+  height: 156px;
+  margin: auto;
+}
+.logoCenter {
+  margin-left: 31px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .NavbarContainer {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .HeroHeading {
+    font-size: 47px;
+    width: 44%;
+    line-height: normal;
+  }
+  .list {
+    padding: 7px !important;
+    margin-left: 16px;
+  }
+  .mediaIcon {
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .NavbarContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .list {
+    padding: 3px !important;
+    margin-left: 16px;
+  }
+  .mediaIcon {
+    margin-left: 3px;
+  }
+  .logoCenter {
+    margin-left: 20px;
+  }
+  .Heading {
+    padding-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Intro {
+    background-image: url("../../src/img/bg.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    min-height: 100vh;
+  }
+  .NavbarContainer {
+    /* padding-top: 30px; */
+    justify-content: space-around;
+  }
+
+  .logoSm {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .NavbarContainer {
+    padding: 15px;
+  }
+}
+
+.navbar {
+  z-index: 1;
+}
+.li {
+  list-style: none;
+  margin-left: 15px;
+  background-color: red;
+}
+
+.nav-items {
+  font-family: "Actor", sans-serif;
+  font-size: 15px;
+}
+.list {
+  text-align: center;
+  font-family: Actor, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
+  letter-spacing: 0.2px;
+  padding: 10px;
+}
+
+:dir(ltr) .NavbarContainer {
+  justify-content: space-around;
+}
+
+:dir(rtl) .NavbarContainer {
+  justify-content: space-between;
+}
+
+:dir(ltr) .rtl_btn {
+  margin-right: 10px;
+}
+
+:dir(rtl) .rtl_btn {
+  margin-right: 10px;
+}

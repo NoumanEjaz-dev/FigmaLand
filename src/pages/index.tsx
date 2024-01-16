@@ -5,7 +5,7 @@ import { useState } from "react";
 import "tailwindcss/tailwind.css";
 import styles from "../styles/Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
-import Intro from "../../components/HeroSection/Intro";
+import HeroSection from "../../components/HeroSection/HeroSection";
 import Feature from "../../components/Features/Feature";
 import Partners from "../../components/Partners/Partners";
 import Footer from "../../components/Footer/Footer";
@@ -23,15 +23,17 @@ export default function Home() {
         <div dir={`${isChange ? "ltr" : "rtl"}`}>
           <div className={styles.background}>
             <Navbar />
-            <Intro Change={isChange} SetChange={setIsChange} />
+            <HeroSection Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />
             <SliderBox />
             <Footer />
             <Infoblock />
-            {/* <Subscribe /> */}
+            <TilesGroup />
           </div>
         </div>
+
+        {/* <Subscribe /> */}
 
         {/* <TilesGroup /> */}
 

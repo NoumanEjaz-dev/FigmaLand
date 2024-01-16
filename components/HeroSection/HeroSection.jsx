@@ -1,13 +1,12 @@
 import React from "react";
 import Buttons from "../Buttons/Buttons";
-// import styles from "../styles/Home.module.css";
-import styles from "../../src/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Togglebtn from "../../src/img/Togglebtn.png";
-import Togglebutton from "../../components/SwitchButton/SwitchButton";
+import Togglebutton from "../SwitchButton/SwitchButton";
+import HeroStyle from "./HeroStyle.module.css";
 
-const Intro = ({ Change, SetChange }) => {
+const HeroSection = ({ Change, SetChange }) => {
   console.log("hello", Change);
 
   const changetoggle = () => {
@@ -16,36 +15,38 @@ const Intro = ({ Change, SetChange }) => {
 
   return (
     <>
-      <section className={styles.Intro}>
+      <section className={HeroStyle.Intro}>
         <div className="screen-bg">
-          <div className={`${styles.Heading} items-center pt-64  text-center`}>
+          <div
+            className={`${HeroStyle.Heading} items-center pt-64  text-center`}
+          >
             <h1
-              className={`${styles.HeroHeading} xl:w-1/4 md:w-1/2 sm:w-1/2 m-auto  lg:text-6xl text-white font-light text-center mb-8`}
+              className={`${HeroStyle.HeroHeading} xl:w-1/3 md:w-1/2 sm:w-1/2 m-auto  lg:text-6xl text-white font-light text-center mb-8`}
             >
               The best products start with Figma
             </h1>
             <p
-              className={`${styles.heroPara} text-center text-white xl:w-1/3 sm:w-1/2 m-auto font-normal`}
+              className={`${HeroStyle.heroPara} text-center text-white xl:w-1/3 md:w-1/2 m-auto font-normal`}
             >
               Most calendars are designed for teams. Slate is designed for
               freelancers
             </p>
             <p
-              className={`${styles.heroParaSm} text-center  text-white sm:hidden m-auto font-normal`}
+              className={`${HeroStyle.heroParaSm} text-center  text-white m-auto font-normal`}
             >
               {" "}
               Most calendars are designed for teams.{" "}
             </p>
-            <div className={`${styles.buttonSection} mt-10 lg:mt-20 pt-5`}>
+            <div className={`${HeroStyle.buttonSection} mt-10 lg:mt-20 pt-5`}>
               <Buttons
                 title="Show/Hide Features"
                 color="#2091F9"
-                className={styles.btn}
+                className={HeroStyle.btn}
               />
               <Buttons
                 title="Show/Hide Partners"
                 color="#2091F9"
-                className={styles.btn}
+                className={HeroStyle.btn}
               />
               <div className=" mt-3 flex justify-center text-gray-50">
                 <Image
@@ -57,9 +58,9 @@ const Intro = ({ Change, SetChange }) => {
                 <p className=" ml-3">Show Both</p>
               </div>
               <div
-                className={`${styles.SwitchButton} pt-2 flex justify-center text-gray-50`}
+                className={`${HeroStyle.SwitchButton} pt-2 flex justify-center text-gray-50`}
               >
-                <p className="mr-3">RTL</p>
+                <p className={`${HeroStyle.rtl_btn} mr-3`}>RTL</p>
 
                 <Togglebutton Change={Change} onToggle={changetoggle} />
               </div>
@@ -71,4 +72,4 @@ const Intro = ({ Change, SetChange }) => {
   );
 };
 
-export default Intro;
+export default HeroSection;
