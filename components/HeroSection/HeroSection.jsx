@@ -56,12 +56,12 @@ const HeroSection = ({ Change, SetChange }) => {
                   className="cursor-pointer"
                   priority
                 />
-                <p className=" ml-3">Show Both</p>
+                <p className=" ml-2 ps-2 ">Show Both</p>
               </div>
               <div
                 className={`${HeroStyle.SwitchButton} pt-2 flex justify-center text-gray-50`}
               >
-                <p className={`${HeroStyle.rtl_btn} mr-3`}>RTL</p>
+                <p className={`${HeroStyle.rtl_btn} mr-3 pe-3 `}>RTL</p>
 
                 <Togglebutton Change={Change} onToggle={changetoggle} />
               </div>
