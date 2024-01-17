@@ -21,7 +21,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         cursor: "pointer",
-        marginTop: "330px",
+        marginTop: "336px",
         position: "absolute",
         marginRight: "90px",
       }}
@@ -55,7 +55,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         cursor: "pointer",
-        marginTop: "344px",
+        marginTop: "351px",
         marginLeft: "50px",
       }}
       onClick={onClick}

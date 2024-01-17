@@ -150,3 +150,7 @@
 :dir(rtl) .rtl_btn {
   margin-right: 10px;
 }
+
+:dir(rtl) .MenuBarSm {
+  direction: ltr;
+}

@@ -163,101 +163,105 @@ const Navbar = ({ Change }) => {
           </div>
         </div>
 
-        <div
-          className={`${
-            menuOpen
-              ? ` absolute left-0 top-0 w-72 h-screen bg-blue-400 p-10 ease-in duration-500 md:hidden ${
-                  Change
-                    ? "  right-0 ease-out duration-500  bg-blue-400"
-                    : " left-36  ease-out duration-500  bg-blue-400"
-                }`
-              : "fixed top-0 -left-56 p-10 ease-out duration-500"
-          }`}
-        >
-          <div className="flex w-full items-center justify-end">
-            <div onClick={handleNav} className="cursor-pointer">
-              <AiOutlineClose size={25} className="text-white" />
+        <div className={`${NavbarStyle.MenuBarSm} `}>
+          <div
+            className={`${
+              menuOpen
+                ? `fixed right-0 top-0 w-72 h-screen bg-blue-400 p-10 ease-in duration-500 md:hidden ${
+                    Change
+                      ? "ease-out duration-500 bg-blue-400"
+                      : "left-0 ease-out duration-500 bg-blue-400"
+                  }`
+                : Change
+                ? "fixed top-0 -right-56 p-10 ease-out duration-500"
+                : "fixed top-0 -left-56 p-10 ease-out duration-500"
+            }`}
+          >
+            <div className="flex w-full items-center justify-end">
+              <div onClick={handleNav} className="cursor-pointer">
+                <AiOutlineClose size={25} className="text-white" />
+              </div>
             </div>
-          </div>
-          <div className="flex-col py-4">
-            <ul className="text-white">
+            <div className="flex-col py-4">
+              <ul className="text-white">
+                <Link href="/">
+                  <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer font-sans"
+                  >
+                    Home
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer font-sans"
+                  >
+                    Product
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer font-sans"
+                  >
+                    Pricing
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer font-sans"
+                  >
+                    About
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li
+                    onClick={() => setMenuOpen(false)}
+                    className="py-4 cursor-pointer font-sans"
+                  >
+                    Contact
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <div className="flex flex-row justify-start pt-18 items-cente">
               <Link href="/">
-                <li
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 cursor-pointer font-sans"
-                >
-                  Home
-                </li>
+                <Image
+                  src={Facebook}
+                  alt="facebook"
+                  className="cursor-pointer ml-2"
+                  priority
+                />
               </Link>
               <Link href="/">
-                <li
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 cursor-pointer font-sans"
-                >
-                  Product
-                </li>
+                <Image
+                  src={Lindedin}
+                  alt="Linkedin"
+                  className="cursor-pointer ml-2"
+                  priority
+                />
               </Link>
               <Link href="/">
-                <li
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 cursor-pointer font-sans"
-                >
-                  Pricing
-                </li>
+                <Image
+                  src={Twitter}
+                  alt="Twitter"
+                  className="cursor-pointer ml-2 "
+                  priority
+                />
               </Link>
-              <Link href="/">
-                <li
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 cursor-pointer font-sans"
-                >
-                  About
-                </li>
-              </Link>
-              <Link href="/">
-                <li
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 cursor-pointer font-sans"
-                >
-                  Contact
-                </li>
-              </Link>
-            </ul>
-          </div>
-          <div className="flex flex-row justify-start pt-18 items-cente">
+            </div>
             <Link href="/">
               <Image
-                src={Facebook}
-                alt="facebook"
-                className="cursor-pointer ml-2"
+                src={Logo}
+                alt="logo"
+                width="170"
+                className="cursor-pointer md:hidden"
                 priority
               />
             </Link>
-            <Link href="/">
-              <Image
-                src={Lindedin}
-                alt="Linkedin"
-                className="cursor-pointer ml-2"
-                priority
-              />
-            </Link>
-            <Link href="/">
-              <Image
-                src={Twitter}
-                alt="Twitter"
-                className="cursor-pointer ml-2 "
-                priority
-              />
-            </Link>
           </div>
-          <Link href="/">
-            <Image
-              src={Logo}
-              alt="logo"
-              width="170"
-              className="cursor-pointer md:hidden"
-              priority
-            />
-          </Link>
         </div>
       </nav>
       {/*  */}
