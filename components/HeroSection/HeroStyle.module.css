@@ -20,7 +20,7 @@
   height: auto;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: 93vh;
+  min-height: 100vh;
   /* background-color: red; */
 }
 .logoSm {
@@ -30,8 +30,20 @@
 .heroParaSm {
   display: none;
 }
+.HeroHeading {
+  width: 40%;
+}
 
 @media only screen and (max-width: 1024px) {
+  .Intro {
+    background-image: url("../../src/img/bg.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    min-height: 100vh;
+  }
   .HeroHeading {
     font-size: 47px;
     width: 40%;
@@ -59,11 +71,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    min-height: 85vh;
+    min-height: 87vh;
   }
   .HeroHeading {
     font-size: 47px;
-    width: 55%;
+    width: 50%;
     line-height: normal;
     /* font-family: "Actor", sans-serif; */
   }
@@ -71,9 +83,21 @@
     width: 100%;
     margin: auto;
   }
+  .HeroHeading {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .Intro {
+    background-image: url("../../src/img/bg.png");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    min-height: 100vh;
+  }
   .NavbarContainer {
     width: 100%;
     margin: auto;
@@ -87,31 +111,19 @@
   .heroPara {
     width: 60%;
   }
-  /* .footerContainer {
-    flex-wrap: wrap;
+  .HeroHeading {
+    padding-top: 80px;
   }
-  .arrow {
-    display: none !important;
-  } */
 }
 
 @media only screen and (max-width: 767px) {
-  .Intro {
-    background-image: url("../../src/img/bg.png");
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    min-height: 100vh;
-  }
   .NavbarContainer {
     padding-top: 30px;
     justify-content: center;
   }
-  .HeroHeading {
+  /* .HeroHeading {
     padding-top: 60px;
-  }
+  } */
 
   .logoSm {
     display: block;
@@ -125,9 +137,9 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 544px) {
   .HeroHeading {
-    width: 70%;
+    width: 55%;
   }
   .heroPara {
     display: none;
@@ -136,6 +148,12 @@
   .heroParaSm {
     width: 55%;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .HeroHeading {
+    width: 70%;
   }
 }
 @media only screen and (max-width: 425px) {
