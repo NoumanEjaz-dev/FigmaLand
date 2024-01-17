@@ -1,0 +1,35 @@
+.address {
+  direction: ltr;
+  margin-top: "-10px";
+}
+.contact {
+  direction: ltr;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .details {
+    position: relative;
+    right: 90px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact {
+    margin-right: 128px;
+  }
+  .details {
+    position: relative;
+    right: 0px;
+  }
+}
+.footerSection {
+  background: var(--Dark-background, #252b42);
+}
+
+:dir(rtl) .mediaIcons {
+  justify-content: flex-end;
+}

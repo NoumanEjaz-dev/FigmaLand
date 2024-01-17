@@ -6,3 +6,10 @@
   line-height: 30px;
   letter-spacing: 0.2px;
 }
+
+.arrowIcon {
+  direction: ltr;
+}
+.HowWeWork {
+  direction: ltr;
+}

@@ -11,4 +11,5 @@
 .SeeMore {
   color: var(--Blue, #084c61);
   font-weight: 500;
+  direction: ltr;
 }

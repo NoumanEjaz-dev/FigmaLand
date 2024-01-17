@@ -1,19 +1,133 @@
 .SubscribeContainer {
-  background-image: url("../../src/img/subscribeImages/bg.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../../src/img/subscribeImages/bg.png"); */
+  /* background-repeat: no-repeat;
   background-size: cover;
   width: 77%;
   height: 43vh;
-  margin: auto;
+  margin: auto; */
 }
 
-.SubCardHeading {
+/* .SubCardHeading {
   padding: 62px 160px 25px 154px;
   font-family: Poppins, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: 54px;
+} */
+
+.box {
+  background: var(--light-color, #dfd7f96e);
+  border-radius: 10px;
+  border-top-left-radius: 160px;
+  width: 75%;
+  margin: auto;
+}
+
+.SubCardHeading {
+  padding: 62px 160px 25px 154px;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 47px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    background: var(--light-color, #dfd7f96e);
+    /* background: aliceblue; */
+    border-radius: 10px;
+    border-top-left-radius: 160px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .SubCardHeading {
+    padding: 62px 100px 20px 100px;
+    font-family: Poppins, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  /* .input {
+    width: 60%;
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    background: var(--light-color, #dfd7f96e);
+    /* background: aliceblue; */
+    border-radius: 10px;
+    border-top-left-radius: 160px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .SubCardHeading {
+    padding: 62px 100px 20px 100px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 633px) {
+  .box {
+    background: var(--light-color, #dfd7f96e);
+    /* background: aliceblue; */
+    border-radius: 10px;
+    border-top-left-radius: 160px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .SubCardHeading {
+    padding: 60px 60px 10px 50px;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .Subscribebtn {
+    margin-top: 15px;
+  }
+  .input {
+    width: 100%;
+  }
+  .inputContainer {
+    flex-wrap: wrap;
+  }
+  .SvgImage {
+    display: none;
+    left: -158px;
+    top: 36px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Subscribebtn {
+    margin-top: 15px;
+  }
+  .input {
+    width: 100%;
+  }
+  .inputContainer {
+    flex-wrap: wrap;
+  }
+  /* .SvgImage {
+    position: fixed;
+    left: -110px;
+    top: 36px;
+  } */
 }
 
 .Subscribebtn {

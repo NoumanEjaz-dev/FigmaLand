@@ -161,13 +161,19 @@
     /* min-height: 100vh !important; */
   }
   .HeroHeading {
-    font-size: 37px;
-    width: 70%;
+    font-size: 45px;
+    width: 75%;
     /* font-family: "Actor", sans-serif; */
   }
   .heroParaSm {
     width: 60%;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 347px) {
+  .HeroHeading {
+    font-size: 37px;
   }
 }
 

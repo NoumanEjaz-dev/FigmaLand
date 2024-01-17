@@ -5,7 +5,7 @@ const Infoblock = () => {
   return (
     <>
       <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-24 lg:w-1/2 mx-auto">
+        <div class="container px-5 py-24 xl:w-7/12 lg:w-9/12 md:w-11/12 mx-auto">
           <h1 class="font-bold text-xl uppercase title-font text-gray-700">
             Our work
           </h1>

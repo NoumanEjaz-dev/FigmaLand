@@ -22,7 +22,7 @@ const HeroSection = ({ Change, SetChange }) => {
           >
             {/* xl:w-1/3 lg:w-1/3  md:w-1/2 sm:w-1/2  */}
             <h1
-              className={`${HeroStyle.HeroHeading} m-auto  lg:text-6xl text-white font-light text-center mb-8`}
+              className={`${HeroStyle.HeroHeading} m-auto lg:text-6xl text-white font-light text-center mb-8`}
             >
               The best products start with Figma
             </h1>

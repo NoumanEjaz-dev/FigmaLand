@@ -30,6 +30,7 @@ export default function Home() {
             <Footer />
             <Infoblock />
             <TilesGroup />
+            {/* <Subscribe /> */}
           </div>
         </div>
 
