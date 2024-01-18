@@ -16,6 +16,14 @@
   width: 15%;
 }
 
+:dir(rtl) .iconImage {
+  direction: ltr;
+}
+
+:dir(rtl) .inputContainer {
+  direction: ltr;
+}
+
 /* .SubCardHeading {
   padding: 62px 160px 25px 154px;
   font-family: Poppins, sans-serif;

@@ -104,7 +104,7 @@ const Subscribe = () => {
                   </h1>
                   <div className="p-10 pb-0 pt-0 mr-28">
                     <div
-                      className={`${SubscribeStyles.inputContainer} flex justify-center text-center pb-16 `}
+                      className={`${SubscribeStyles.inputContainer} flex justify-center text-center pb-16  `}
                     >
                       {/* <Image className="" src={circleImage} alt="twiiter" /> */}
 
