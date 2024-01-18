@@ -143,8 +143,11 @@
     /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
-    width: 85%;
+    width: 65%;
     margin: auto;
+  }
+  .iconImage {
+    width: 18%;
   }
   .Subscribebtn {
     margin-top: 15px;
@@ -168,11 +171,14 @@
     /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   .Subscribebtn {
     margin-top: 15px;
+  }
+  .iconImage {
+    width: 22%;
   }
   .input {
     width: 100%;
