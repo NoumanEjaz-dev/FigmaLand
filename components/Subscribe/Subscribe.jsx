@@ -102,7 +102,7 @@ const Subscribe = () => {
                     Subscribe to get information, latest news and other
                     interesting offers about WindTravel
                   </h1>
-                  <div className="p-10 pb-0 pt-0">
+                  <div className="p-10 pb-0 pt-0 mr-28">
                     <div
                       className={`${SubscribeStyles.inputContainer} flex justify-center text-center pb-16 `}
                     >

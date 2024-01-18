@@ -9,7 +9,7 @@
   padding: 1px 0px 0px 23px;
 }
 .input {
-  width: 50%;
+  width: 35%;
 }
 
 .iconImage {
@@ -56,6 +56,10 @@
 }
 
 @media only screen and (max-width: 1280px) {
+  .input {
+    width: 40%;
+  }
+
   .SubCardHeading {
     padding: 62px 160px 25px 154px;
     font-family: Poppins, sans-serif;
@@ -68,6 +72,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .input {
+    width: 50%;
+  }
+
   .box {
     /* background: var(--light-color, #dfd7f96e); */
     /* background: aliceblue; */
@@ -89,6 +97,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .box {
+    display: none;
+  }
   .SubscribeContainer {
     background-image: none;
     background-size: 109% 107%;
@@ -121,11 +132,10 @@
     width: 11%;
   } */
 }
-
+/* 
 @media only screen and (max-width: 633px) {
   .box {
     background: var(--light-color, #dfd7f96e);
-    /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
     width: 90%;
@@ -144,13 +154,9 @@
 }
 
 @media only screen and (max-width: 538px) {
-  .box {
-    display: none;
-  }
 
   .box {
     background: var(--light-color, #dfd7f96e);
-    /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
     width: 65%;
@@ -178,7 +184,6 @@
 @media only screen and (max-width: 320px) {
   .box {
     background: var(--light-color, #dfd7f96e);
-    /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
     width: 60%;
@@ -196,7 +201,7 @@
   .inputContainer {
     flex-wrap: wrap;
   }
-}
+} */
 
 .Subscribebtn {
   background: var(
