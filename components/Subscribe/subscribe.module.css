@@ -1,10 +1,19 @@
 .SubscribeContainer {
-  /* background-image: url("../../src/img/subscribeImages/bg.png"); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  width: 77%;
+  background-image: url("../../src/img/subscribeImages/bgImage.png");
+  /* background-size: 100%; */
+  /* width: 77%;
   height: 43vh;
-  margin: auto; */
+  margin: auto;  */
+  background-size: 98% 108%;
+  background-repeat: no-repeat;
+  padding: 1px 0px 0px 23px;
+}
+.input {
+  width: 50%;
+}
+
+.iconImage {
+  width: 15%;
 }
 
 /* .SubCardHeading {
@@ -17,7 +26,7 @@
 } */
 
 .box {
-  background: var(--light-color, #dfd7f96e);
+  /* background: var(--light-color, #dfd7f96e); */
   border-radius: 10px;
   border-top-left-radius: 160px;
   width: 75%;
@@ -27,15 +36,37 @@
 .SubCardHeading {
   padding: 62px 160px 25px 154px;
   font-family: Poppins, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: 47px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .SubCardHeading {
+    padding: 62px 160px 25px 154px;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .SubCardHeading {
+    padding: 62px 160px 25px 154px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .box {
-    background: var(--light-color, #dfd7f96e);
+    /* background: var(--light-color, #dfd7f96e); */
     /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
@@ -51,18 +82,25 @@
     font-weight: 600;
     line-height: 40px;
   }
-  /* .input {
-    width: 60%;
-  } */
 }
 
 @media only screen and (max-width: 768px) {
+  .SubscribeContainer {
+    background-image: none;
+    background-size: 109% 107%;
+    background-repeat: no-repeat;
+    padding: 1px 0px 0px 23px;
+  }
+  .iconImage {
+    width: 8%;
+  }
+
   .box {
     background: var(--light-color, #dfd7f96e);
     /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 
@@ -74,6 +112,9 @@
     font-weight: 600;
     line-height: 40px;
   }
+  /* .iconImage {
+    width: 11%;
+  } */
 }
 
 @media only screen and (max-width: 633px) {
@@ -82,7 +123,7 @@
     /* background: aliceblue; */
     border-radius: 10px;
     border-top-left-radius: 160px;
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 
@@ -97,6 +138,14 @@
 }
 
 @media only screen and (max-width: 538px) {
+  .box {
+    background: var(--light-color, #dfd7f96e);
+    /* background: aliceblue; */
+    border-radius: 10px;
+    border-top-left-radius: 160px;
+    width: 85%;
+    margin: auto;
+  }
   .Subscribebtn {
     margin-top: 15px;
   }
@@ -114,6 +163,14 @@
 }
 
 @media only screen and (max-width: 320px) {
+  .box {
+    background: var(--light-color, #dfd7f96e);
+    /* background: aliceblue; */
+    border-radius: 10px;
+    border-top-left-radius: 160px;
+    width: 80%;
+    margin: auto;
+  }
   .Subscribebtn {
     margin-top: 15px;
   }
