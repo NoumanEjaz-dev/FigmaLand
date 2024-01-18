@@ -40,6 +40,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 47px;
+  color: #5e6282;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -50,6 +51,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 47px;
+    color: #5e6282;
   }
 }
 
@@ -61,6 +63,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 47px;
+    color: #5e6282;
   }
 }
 
@@ -81,6 +84,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
+    color: #5e6282;
   }
 }
 
@@ -111,6 +115,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
+    color: #5e6282;
   }
   /* .iconImage {
     width: 11%;
@@ -134,10 +139,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: 40px;
+    color: #5e6282;
   }
 }
 
 @media only screen and (max-width: 538px) {
+  .box {
+    display: none;
+  }
+
   .box {
     background: var(--light-color, #dfd7f96e);
     /* background: aliceblue; */
@@ -186,11 +196,6 @@
   .inputContainer {
     flex-wrap: wrap;
   }
-  /* .SvgImage {
-    position: fixed;
-    left: -110px;
-    top: 36px;
-  } */
 }
 
 .Subscribebtn {
@@ -199,10 +204,3 @@
     linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
   );
 }
-
-/* .img {
-  float: right;
-  position: relative;
-  top: -30px;
-  right: 45px;
-} */
