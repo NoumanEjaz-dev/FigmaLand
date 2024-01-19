@@ -8,6 +8,9 @@ import styles from "../../src/styles/Home.module.css";
 import FeatureStlye from "./FeatureStyle.module.css";
 
 const Feature = () => {
+  const videoId =
+    "https://www.youtube.com/watch?v=Cx2dkpBxst8&list=PLXDU_eVOJTx7QHLShNqIXL1Cgbxj7HlN4";
+
   return (
     <>
       <div className="Features-Section pb-10">
@@ -32,15 +35,15 @@ const Feature = () => {
           className={`${FeatureStlye.container} block sm:hidden text-gray-600 body-font pt-10`}
         >
           <div className="mx-auto flex flex-col w-11/12 justify-center items-center">
-            <video
+            <iframe
               className={`${FeatureStlye.video} block sm:hidden`}
-              controls
-              width="1100"
-              height="660"
-            >
-              <source src="path_to_your_video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              src={`https://www.youtube.com/embed/${videoId}`}
+              width="100%"
+              height="400px"
+              frameBorder="0"
+              allowFullScreen
+              title="YouTube Video"
+            ></iframe>
             {/* Any additional content here */}
           </div>
         </section>
@@ -116,16 +119,22 @@ const Feature = () => {
           <div
             className={`${FeatureStlye.VideoContainer}  container mx-auto flex flex-col w-9/12 justify-center items-center`}
           >
-            <video
+            {/* <video
               className={`${FeatureStlye.video} hidden sm:block `}
               controls
               width="1100"
               height="660"
-            >
-              <source src="path_to_your_video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            ></video> */}
             {/* Any additional content here */}
+            <iframe
+              className={`${FeatureStlye.video} hidden sm:block `}
+              src={`https://www.youtube.com/embed/${videoId}`}
+              frameBorder="0"
+              allowFullScreen
+              width="80%"
+              height="600px"
+              title="YouTube Video"
+            ></iframe>
           </div>
         </section>
       </div>
