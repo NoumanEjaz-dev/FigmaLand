@@ -38,8 +38,8 @@ const Feature = () => {
             <iframe
               className={`${FeatureStlye.video} block sm:hidden`}
               src={`https://www.youtube.com/embed/${videoId}`}
-              width="100%"
-              height="400px"
+              // width="100%"
+              // height="400px"
               frameBorder="0"
               allowFullScreen
               title="YouTube Video"
@@ -131,8 +131,8 @@ const Feature = () => {
               src={`https://www.youtube.com/embed/${videoId}`}
               frameBorder="0"
               allowFullScreen
-              width="80%"
-              height="600px"
+              // width="80%"
+              // height="600px"
               title="YouTube Video"
             ></iframe>
           </div>

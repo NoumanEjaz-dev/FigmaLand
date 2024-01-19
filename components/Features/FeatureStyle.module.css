@@ -2,14 +2,66 @@
   padding-top: 52px;
   padding-bottom: 52px;
 }
+.FeatureService {
+  width: 100%;
+  font-family: Actor, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  margin: auto;
+}
+.FeatureDesign {
+  font-family: Actor, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+.video {
+  width: 80%;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: -3px 1px 50.145px -8px;
+}
+
+.li {
+  list-style: none;
+  margin-left: 15px;
+  background-color: red;
+}
+
+.FeatureServicePara {
+  font-family: Actor, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #374754;
+}
 
 @media only screen and (max-width: 1280px) {
   .services {
     width: 70%;
   }
+  .video {
+    width: 85%;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: -3px 1px 50.145px -8px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .video {
+    width: 90%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: -3px 1px 50.145px -8px;
+  }
   .FeaturesPara {
     display: none;
   }
@@ -35,41 +87,11 @@
   }
 }
 
-.FeatureService {
-  width: 100%;
-  font-family: Actor, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-  margin: auto;
-}
-.FeatureDesign {
-  font-family: Actor, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-}
-.video {
-  border-radius: 15px;
-  box-shadow: -3px 1px 50.145px -8px;
-}
-
-.li {
-  list-style: none;
-  margin-left: 15px;
-  background-color: red;
-}
-
-.FeatureServicePara {
-  font-family: Actor, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 25px;
-  letter-spacing: 0.5px;
-  color: #374754;
+@media only screen and (max-width: 425px) {
+  .video {
+    width: 90%;
+    height: 220px !important;
+    border-radius: 15px;
+    box-shadow: -3px 1px 50.145px -8px;
+  }
 }
