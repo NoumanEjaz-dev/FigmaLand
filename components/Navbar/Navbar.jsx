@@ -50,7 +50,7 @@ const Navbar = ({ Change }) => {
             <ul className="hidden md:flex items-center cursor-pointer">
               <Link href="/">
                 <li
-                  className={`${NavbarStyle.list} nav-items ml-5 hover:border-b`}
+                  className={`${NavbarStyle.list} nav-items  md:m-0 lg:ml-5 hover:border-b`}
                 >
                   Home
                 </li>

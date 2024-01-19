@@ -35,6 +35,28 @@
   width: 40%;
 }
 
+@media only screen and (max-width: 1880px) {
+  .HeroHeading {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1501px) {
+  .HeroHeading {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1287px) {
+  .HeroHeading {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 1287px) {
+  .HeroHeading {
+    width: 45%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .Intro {
     background-image: url("../../src/img/bg.png");
