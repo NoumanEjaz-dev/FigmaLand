@@ -14,7 +14,7 @@ const Partners = () => {
     <>
       <div className="Partners">
         <h1
-          className={`${PartnerStyles.PartnersHeading} text-center pt-20 text-5xl font-normal`}
+          className={`${PartnerStyles.PartnersHeading} text-center pt-20  text-5xl font-normal`}
         >
           Partners
         </h1>

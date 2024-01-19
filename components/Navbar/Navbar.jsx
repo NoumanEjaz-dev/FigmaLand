@@ -47,7 +47,7 @@ const Navbar = ({ Change }) => {
                 <Image src={Logo} alt="logo-1" priority />
               </Link>
             </div>
-            <ul className="hidden md:flex items-center">
+            <ul className="hidden md:flex items-center cursor-pointer">
               <Link href="/">
                 <li
                   className={`${NavbarStyle.list} nav-items ml-5 hover:border-b`}
@@ -55,28 +55,28 @@ const Navbar = ({ Change }) => {
                   Home
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/Product">
                 <li
                   className={`${NavbarStyle.list} nav-items ml-5 hover:border-b`}
                 >
                   Product
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/Pricing">
                 <li
                   className={`${NavbarStyle.list} nav-items ml-5  hover:border-b`}
                 >
                   Pricing
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/About">
                 <li
                   className={`${NavbarStyle.list} nav-items ml-5 hover:border-b`}
                 >
                   About{" "}
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/Contact">
                 <li
                   className={`${NavbarStyle.list} nav-items ml-5 font-sans text-base hover:border-b`}
                 >
