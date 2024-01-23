@@ -79,7 +79,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const SliderBox = () => {
+const SliderBox = ({ Change }) => {
   const settings = {
     dots: true,
     arrows: true,
@@ -87,11 +87,14 @@ const SliderBox = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: Change ? 6 : 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    rtl: Change,
     customPaging: function (i) {
       return <div className={`${sliderStyle.customDot} `}></div>;
     },
+    initialSlide: Change ? 6 : 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -118,11 +121,14 @@ const SliderBox = () => {
         <h1 className={`${sliderStyle.SliderHeading} text-center`}>
           FEATURED VIDEOS
         </h1>
-        <div className={`${sliderStyle.SliderContainer} mt-20`}>
+        <div
+          className={`${sliderStyle.SliderContainer} mt-20`}
+          dir={Change ? "rtl" : "ltr"}
+        >
           <Slider {...settings}>
-            {data.map((d) => (
+            {data.map((d, index) => (
               // eslint-disable-next-line react/jsx-key
-              <div className="">
+              <div className="" key={index}>
                 <div className="flex justify-center m-2 items-center">
                   <Image
                     src={d.img}

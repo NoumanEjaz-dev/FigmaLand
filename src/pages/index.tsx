@@ -26,7 +26,7 @@ export default function Home() {
             <HeroSection Change={isChange} SetChange={setIsChange} />
             <Feature />
             <Partners />
-            <SliderBox />
+            <SliderBox  Change={isChange}/>
             <Footer />
             <Infoblock />
             <TilesGroup />
